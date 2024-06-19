@@ -7,6 +7,17 @@ export const styles = css`
     padding: 0 15dvw;
     background-color: #414141;
     color: white;
-    height: 6dvh;
+    height: 4.5dvh;
+  }
+
+  h3 {
+    color: white;
+    font-weight: 500
+  }
+
+  @media (max-width: 1366px) {
+    section {
+      height: 6dvh;
+    }
   }
 `

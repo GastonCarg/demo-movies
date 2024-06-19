@@ -4,10 +4,16 @@ export default function Header() {
   return (
     <>
       <header>
-        <h1>DEMO Streaming</h1>
+        <h2>DEMO Streaming</h2>
         <div>
-          <button id='login'>Log in</button>
-          <button id='free-trial'>Start you free trial</button>
+          <button id='login'>
+            <h3>Log in</h3>
+          </button>
+          <button id='free-trial'>
+            <h3>
+              Start you free trial
+            </h3>
+          </button>
         </div>
       </header>
 
