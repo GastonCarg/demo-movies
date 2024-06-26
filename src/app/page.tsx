@@ -1,12 +1,14 @@
 'use client';
 
-import { Title } from './index';
+import { Title, Titles } from './index';
+import styles from '../ui/home.module.css'
 
 export default function Home() {
   return (
     <>
-      <main>
+      <main className={styles.main}>
         <Title />
+        <Titles />
       </main>
     </>
   );

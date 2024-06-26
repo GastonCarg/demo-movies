@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { styles } from "./style";
+import styles from '@/ui/copyright.module.css';
 
-const copyright = [
+const options = [
   {
     title: 'Home',
     path: '/'
@@ -31,24 +31,22 @@ const copyright = [
 export default function Copyright() {
   return (
     <>
-      <div>
+      <div className={styles.div}>
         {
-          copyright.map((cp, index) => {
+          options.map((cp, index) => {
             return (
               <>
-                <Link id="link-styled" key={index} href={cp.path} className="link-styled">
-                  <p>
+                <Link key={index} href={cp.path} className={styles.linkStyled}>
+                  <p className={styles.p}>
                     {cp.title}
                   </p>
                 </Link>
-                <p className="separator">|</p>
+                <p className={`${styles.separator} ${styles.p}`}>|</p >
               </>
             )
           })
         }
-      </div>
-
-      <style jsx>{styles}</style>
+      </div >
     </>
   )
 }

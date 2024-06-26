@@ -1,5 +1,6 @@
 'use client'
 
+import StyledJsxRegistry from './registry'
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from './index';
@@ -12,11 +13,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+        <StyledJsxRegistry>
+          <Header />
+          {children}
+          <Footer />
+        </StyledJsxRegistry>
       </body>
     </html>
   );

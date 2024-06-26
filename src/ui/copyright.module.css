@@ -1,0 +1,17 @@
+.div {
+  display: flex;
+}
+
+.p {
+  margin-right: 15px;
+}
+
+.separator {
+  opacity: 50%
+}
+
+.linkStyled {
+  color: inherit;
+  text-decoration: none;
+  opacity: 70%
+}
