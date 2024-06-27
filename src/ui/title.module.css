@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  width: 180px;
+  height: 250px;
+  color: white;
+  background-image: url('../../public/placeholder.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150%;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+.text {
+  font-weight: 500;
+}

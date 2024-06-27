@@ -32,6 +32,7 @@
   background-color: #424547;
   color: white;
   padding: 5px;
+  border-color: transparent;
 }
 
 @media (max-width: 1366px) {
