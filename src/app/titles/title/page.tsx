@@ -1,20 +1,23 @@
 import styles from '@/ui/title.module.css';
 import Link from 'next/link';
-interface ITitle {
-  name: string;
-}
+import { ITitle } from '@/lib/types';
 
-const Title: React.FC<ITitle> = ({ name }) => {
-  const goTo = () => {
-    console.log('go to')
-  }
+const Title: React.FC<ITitle> = ({ name, href }) => {
 
   return (
-    <Link href={'/'} className={styles.container}>
-      <h2 className={styles.text}>
-        {name}
-      </h2>
-    </Link>
+    <div>
+      <Link href={{
+        pathname: href,
+        query: {
+          name
+        }
+        }} className={styles.container}>
+        <h2 className={styles.text}>
+          {name.toLocaleUpperCase()}
+        </h2>
+      </Link>
+      <p className={styles.subtitle}>Popular {name}</p>
+    </div>
   )
 }
 
