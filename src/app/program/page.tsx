@@ -4,6 +4,8 @@ import { useSearchParams } from "next/navigation";
 import useGetParams from '@/hooks/useGetPrograms';
 import { Title as TitleHeader } from '@/app/index';
 import Title from '@/app/titles/title/page';
+import styles from '@/ui/program.module.css';
+
 
 const Program = () => {
   const params = useSearchParams();
@@ -12,12 +14,12 @@ const Program = () => {
 
   return (
     <>
+      {programName && <TitleHeader type={programName} />}
       {
         loading ?
-          <div>Loading ...</div>
+          <div className={styles.container}>Loading ...</div>
           :
-          <>
-            {programName && <TitleHeader type={programName} />}
+          <div className={styles.container}>
             {
               data && data.map((dt, index) => {
                 return (
@@ -25,8 +27,7 @@ const Program = () => {
                 )
               })
             }
-
-          </>
+          </div>
       }
     </>
   )

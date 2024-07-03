@@ -14,6 +14,12 @@
   text-decoration: none;
 }
 
+.images {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .text {
   font-weight: 500;
 }
@@ -22,3 +28,4 @@
   padding: 16px 0 0 0;
   font-size: 1.1rem;
 }
+

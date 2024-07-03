@@ -26,11 +26,17 @@ const Title: React.FC<ITitle> = ({ name, href, type, program }) => {
             <Link href={{
               pathname: href ? href : '/',
             }} className={styles.container}>
-              <img src={program?.images.posterArt.url}></img>
+              <img
+                src={program?.images.posterArt.url}
+                alt={program?.title}
+                className={styles.images}
+                // onLoad={(e) => e.target.style.display = 'block'}
+                // onError={(e) => e.target.style.display = 'none'}
+              />
             </Link>
           </>
       }
-      <p className={styles.subtitle}>Popular {name}</p>
+      <p className={styles.subtitle}>{name ? `Popular ${name}` : `Popular ${program?.title}`}</p>
     </div>
   )
 }
