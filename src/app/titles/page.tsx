@@ -19,7 +19,7 @@ export default function TitlesList() {
         streamingTypes.map((str, idx) => {
           const { name, href } = str;
           return (
-            <Title key={idx} name={name} href={href} />
+            <Title key={idx} name={name} href={href} type='title' />
           )
         })
       }

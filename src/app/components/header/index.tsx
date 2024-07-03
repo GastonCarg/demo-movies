@@ -1,12 +1,17 @@
 'use client'
 
 import styles from '@/ui/header.module.css';
+import { useRouter } from 'next/navigation';
 
 export default function Header() {
+  const router = useRouter()
+
   return (
     <>
       <header className={styles.header}>
-        <h2 className={styles.h2}>DEMO Streaming</h2>
+        <button onClick={() => router.push('/')} className={`${styles.login} ${styles.home}`}>
+          <h2 className={styles.h2}>DEMO Streaming</h2>
+        </button>
         <div className={styles.div}>
           <button className={styles.login}>
             <h3 className={styles.h3}>Log in</h3>

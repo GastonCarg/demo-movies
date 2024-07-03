@@ -1,10 +1,8 @@
-export interface IProgram {
-  name: string;
-}
-
 export interface ITitle {
-  name: string;
-  href: string;
+  name?: string;
+  href?: string;
+  type: string;
+  program?: IProgram;
 }
 
 export interface IProgram {

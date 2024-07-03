@@ -18,6 +18,7 @@ export const styles = css`
   @media (max-width: 1366px) {
     section {
       height: 6dvh;
+      padding: 2dvh 15dvw;
     }
   }
 `
