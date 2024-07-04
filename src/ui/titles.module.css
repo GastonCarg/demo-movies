@@ -9,8 +9,7 @@
   .container {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
+    text-align: -webkit-center;
   }
 }

@@ -30,8 +30,11 @@ const Title: React.FC<ITitle> = ({ name, href, type, program }) => {
                 src={program?.images.posterArt.url}
                 alt={program?.title}
                 className={styles.images}
-                // onLoad={(e) => e.target.style.display = 'block'}
-                // onError={(e) => e.target.style.display = 'none'}
+                onError={(e) => {
+                  // Esto estara bien? vaya usted a saber
+                  const { target } = e;
+                  if (target) (target as HTMLImageElement).style.display = 'none'
+                }}
               />
             </Link>
           </>

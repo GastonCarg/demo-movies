@@ -4,7 +4,7 @@ export const styles = css`
   section {
     display: flex;
     align-items: center;
-    padding: 0 15dvw;
+    padding: 1vh 15dvw;
     background-color: #414141;
     color: white;
     height: 4.5dvh;
@@ -18,7 +18,7 @@ export const styles = css`
   @media (max-width: 1366px) {
     section {
       height: 6dvh;
-      padding: 2dvh 15dvw;
+      padding: 1vh 15vw;
     }
   }
 `
