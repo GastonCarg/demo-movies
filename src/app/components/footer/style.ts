@@ -13,4 +13,8 @@ export const styles = css`
     font-weight: 400;
     padding: 2em 0
   }
+
+  h5 {
+    font-weight: 500;
+  }
 `

@@ -1,4 +1,5 @@
 import SocialMedia from './socialMedia';
+import Stores from './stores';
 import styles from '@/ui/icons.module.css';
 
 const Icons = () => {
@@ -9,7 +10,9 @@ const Icons = () => {
           <SocialMedia />
         </section>
 
-        <section id='mobileDownload'>Iconos descarga</section>
+        <section id='stores'>
+          <Stores />
+        </section>
       </div>
     </>
   )

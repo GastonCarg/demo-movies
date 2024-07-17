@@ -38,7 +38,7 @@ const Title: React.FC<ITitle> = ({ name, href, type, program }) => {
             </Link>
           </>
       }
-      <p className={styles.subtitle}>{name ? `Popular ${name}` : `Popular ${program?.title}`}</p>
+      <p className={styles.subtitle}>{name ? `Popular ${name}` : `${program?.title}`}</p>
     </div>
   )
 }
