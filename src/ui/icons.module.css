@@ -1,0 +1,8 @@
+.socialMedia {
+  opacity: 70%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}

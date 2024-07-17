@@ -15,7 +15,6 @@ const Title: React.FC<ITitle> = ({ name, href, type, program }) => {
                 name
               }
             }} className={styles.container}>
-              {/* <img>background con el icono png</img> */}
               <h2 className={styles.text}>
                 {name?.toLocaleUpperCase()}
               </h2>

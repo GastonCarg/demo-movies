@@ -5,6 +5,12 @@ export const styles = css`
     background-color: #1e1e1e;
     padding: 5vh 15vw;
     height: 30dvh;
-    color:white
+    color: white
+  }
+
+  #copyright {
+    opacity: 70%;
+    font-weight: 400;
+    padding: 2em 0
   }
 `

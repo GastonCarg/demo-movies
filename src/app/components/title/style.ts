@@ -7,10 +7,13 @@ export const styles = css`
     padding: 1vh 15dvw;
     background-color: #414141;
     color: white;
-    height: 4.5dvh;
+    height: 5dvh;
+    -webkit-box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.75);
   }
 
-  h3 {
+  h2 {
     color: white;
     font-weight: 500
   }

@@ -6,13 +6,18 @@ import { IProgram } from "@/lib/types";
 const useGetProgram = (name: string | null) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<IProgram[] | null>(null);
+  const [error, setError] = useState<any>(null);
 
   async function getProgramsApi(name: string) {
-    setLoading(true);
-    const programs = await getProgram(name);
-    setData(programs);
+    try {
+      setLoading(true);
+      const programs = await getProgram(name);
+      setData(programs);
 
-    setLoading(false);
+      setLoading(false);
+    } catch (error) {
+      setError(error);
+    }
   }
 
   useEffect(() => {
@@ -21,7 +26,7 @@ const useGetProgram = (name: string | null) => {
     }
   }, [name])
 
-  return { data, loading };
+  return { data, loading, error };
 }
 
 export default useGetProgram;

@@ -10,7 +10,7 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <button onClick={() => router.push('/')} className={`${styles.login} ${styles.home}`}>
-          <h2 className={styles.h2}>DEMO Streaming</h2>
+          <h1 className={`${styles.h2} ${styles.title}`}>DEMO Streaming</h1>
         </button>
         <div className={styles.div}>
           <button className={styles.login}>
