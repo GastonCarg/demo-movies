@@ -15,9 +15,11 @@ const Program = () => {
   const { loading, data, error } = useGetParams(programName);
 
   useEffect(() => {
-    if (error || !data?.length) setWithError(true);
+    if (error || !data?.length && !loading) {
+      setWithError(true);
+    }
     else setWithError(false);
-  }, [data])
+  }, [data, error, loading])
 
   return (
     <>

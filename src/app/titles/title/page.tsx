@@ -5,7 +5,7 @@ import { ITitle } from '@/lib/types';
 const Title: React.FC<ITitle> = ({ name, href, type, program }) => {
 
   return (
-    <div>
+    <div className={styles.divContent}>
       {
         type === 'title' ?
           <>

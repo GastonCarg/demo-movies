@@ -32,3 +32,10 @@
 .hidden {
   display: none;
 }
+
+@media (max-width: 578px) {
+  .divContent {
+    display: contents;
+  }
+
+}
